@@ -1989,6 +1989,7 @@ dependencies = [
     { name = "fastapi" },
     { name = "jupyter" },
     { name = "minisearch" },
+    { name = "minsearch" },
     { name = "mlflow" },
     { name = "numpy" },
     { name = "openai" },
@@ -2014,6 +2015,7 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.141.1" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "minisearch", specifier = ">=1.0.1" },
+    { name = "minsearch", specifier = ">=0.2.0" },
     { name = "mlflow", specifier = ">=3.15.1" },
     { name = "numpy", specifier = ">=2.5.2" },
     { name = "openai", specifier = ">=3.3.0" },
@@ -2147,6 +2149,21 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/c4/7c/0dc5aed51da92002ec694a1ee92893b1fbdfaceb1466f8fb88ae284515b4/minisearch-1.0.1-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7cde4ac24d5f5fb8d13e85273880866c71ad54001c64fa5aa67c416b629677b7", size = 615039, upload-time = "2026-02-22T22:15:14.404Z" },
     { url = "https://files.pythonhosted.org/packages/e9/e7/15b637d08af200a4c2cc54b673a383e84a6c339ba9bc85927acbf14c8744/minisearch-1.0.1-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:02a1a7fda1bd247510ad4d27fc0221685aa694ad5b7b4486fc7330a6c442481c", size = 635043, upload-time = "2026-02-22T22:15:20.559Z" },
     { url = "https://files.pythonhosted.org/packages/81/9a/9be04c1c75ef587f3c479c66a3a574f6b11185647153a0a6ab54027246bf/minisearch-1.0.1-cp314-cp314-win_amd64.whl", hash = "sha256:9c2be27ce68f507945a3a542238a833515c4b93d5f16d74e821b0fe854a7fc07", size = 472790, upload-time = "2026-02-22T22:15:26.738Z" },
+]
+
+[[package]]
+name = "minsearch"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scikit-learn" },
+    { name = "stemlite" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4e/3c/3e52e500c2d46f06548db28a03140abe7279da061c140e841407b9f009e9/minsearch-0.2.0.tar.gz", hash = "sha256:cec1def0aaf97d230dec9d88fa6fbd99965bdfec84a4db09a684564023652d2b", size = 135087, upload-time = "2026-07-02T08:20:13.435Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/26/4a/1605cbf10e15ae2f17226e2cf8acd84352ba29c2caa5aa757ff1f3e49a26/minsearch-0.2.0-py3-none-any.whl", hash = "sha256:a43cda360cd980347228c02eb00e5a72d2a12ff400dae734ea6ec509444dabe9", size = 28464, upload-time = "2026-07-02T08:20:12.407Z" },
 ]
 
 [[package]]
@@ -3596,6 +3613,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/b5/b4/205b0d5241d934e8add0c38aa924c4f9fb7330834ff11e5444db964ec3f9/starlette-1.6.0.tar.gz", hash = "sha256:d4e3ac5e546444960c710297a3c9fc3f7ebae1b7e963f3d36173b49da535be9b", size = 2716969, upload-time = "2026-08-08T18:27:57.512Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c8/cb/6a6a47d5b464bd08695d254f3da6e7986cc70c9fa5d778eda57538edfe56/starlette-1.6.0-py3-none-any.whl", hash = "sha256:a86dd39d14bb45f85a3d18525215a9ef0cfd1f192ac793220e72598c90335f0c", size = 75969, upload-time = "2026-08-08T18:27:56.196Z" },
+]
+
+[[package]]
+name = "stemlite"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ea/4e/4e5ae5f473c0282e76bc3b4966614dc6c72cc6458435e559597b5421ff55/stemlite-0.1.0.tar.gz", hash = "sha256:062d44a1314af379ea6a09f8467d07a776407e456c9932e4e182ef8cfb3948d5", size = 87502, upload-time = "2026-07-02T07:58:24.385Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/02/4d/a71e4324552914bb279f3b28b9dbdf7b1fcace463146f38a49ca076b385d/stemlite-0.1.0-py3-none-any.whl", hash = "sha256:f0488b4bb5fc38d5796a0d627bb35e99c2a47d9f1b49ffea5400b52099eca5b8", size = 9308, upload-time = "2026-07-02T07:58:23.226Z" },
 ]
 
 [[package]]
