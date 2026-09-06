@@ -1,5 +1,6 @@
+import faiss
+import numpy as np
 import requests
-from minsearch import Index
 
 
 def load_faq_data():
@@ -20,10 +21,14 @@ def load_faq_data():
     return documents
 
 
-def build_index(documents):
-    index = Index(
-        text_fields=["question", "section", "answer"],
-        keyword_fields=["course"],
-    )
-    index.fit(documents)
+def build_faiss_index(documents, model, batch_size=50):
+    texts = [doc["question"] + " " + doc["answer"] for doc in documents]
+    vectors = []
+    for i in range(0, len(texts), batch_size):
+        batch = texts[i : i + batch_size]
+        vectors.extend(model.encode(batch))
+
+    X = np.array(vectors).astype(np.float32)
+    index = faiss.IndexFlatIP(X.shape[1])
+    index.add(X)
     return index
