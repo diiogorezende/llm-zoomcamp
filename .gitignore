@@ -76,8 +76,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
-
-faq.db*
 *.db
 *.db-shm
 *.db-wal
